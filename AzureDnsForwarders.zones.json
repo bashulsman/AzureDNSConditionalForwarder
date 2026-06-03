@@ -1,0 +1,839 @@
+﻿{
+    "zones":  [
+                  {
+                      "name":  "privatelink.blob.core.windows.net",
+                      "label":  "Storage — Blob",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.file.core.windows.net",
+                      "label":  "Storage — File",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.queue.core.windows.net",
+                      "label":  "Storage — Queue",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.table.core.windows.net",
+                      "label":  "Storage — Table",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.dfs.core.windows.net",
+                      "label":  "Storage — Data Lake",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.web.core.windows.net",
+                      "label":  "Storage — Static Web",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.database.windows.net",
+                      "label":  "SQL Database",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.documents.azure.com",
+                      "label":  "Cosmos DB (SQL)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mongo.cosmos.azure.com",
+                      "label":  "Cosmos DB (Mongo)",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.cassandra.cosmos.azure.com",
+                      "label":  "Cosmos DB (Cassandra)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.gremlin.cosmos.azure.com",
+                      "label":  "Cosmos DB (Gremlin)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.table.cosmos.azure.com",
+                      "label":  "Cosmos DB (Table)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mysql.database.azure.com",
+                      "label":  "MySQL",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.postgres.database.azure.com",
+                      "label":  "PostgreSQL",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mariadb.database.azure.com",
+                      "label":  "MariaDB",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.vaultcore.azure.net",
+                      "label":  "Key Vault",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.managedhsm.azure.net",
+                      "label":  "Key Vault HSM",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurewebsites.net",
+                      "label":  "App Service",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.azurecr.io",
+                      "label":  "Container Registry",
+                      "enabled":  true
+                  },
+                  {
+                      "name":  "privatelink.servicebus.windows.net",
+                      "label":  "Service Bus / Event Hubs",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.eventgrid.azure.net",
+                      "label":  "Event Grid",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-automation.net",
+                      "label":  "Automation",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.agentsvc.azure-automation.net",
+                      "label":  "Automation Agent",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.monitor.azure.com",
+                      "label":  "Monitor",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.oms.opinsights.azure.com",
+                      "label":  "Log Analytics (OMS)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.ods.opinsights.azure.com",
+                      "label":  "Log Analytics (ODS)",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.cognitiveservices.azure.com",
+                      "label":  "Cognitive Services",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.openai.azure.com",
+                      "label":  "Azure OpenAI",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.search.windows.net",
+                      "label":  "Cognitive Search",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.redis.cache.windows.net",
+                      "label":  "Redis Cache",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.redisenterprise.cache.azure.net",
+                      "label":  "Redis Enterprise",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.sql.azuresynapse.net",
+                      "label":  "Synapse SQL",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dev.azuresynapse.net",
+                      "label":  "Synapse Studio",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azuresynapse.net",
+                      "label":  "Synapse",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.datafactory.azure.net",
+                      "label":  "Data Factory",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.adf.azure.com",
+                      "label":  "Data Factory Portal",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.purview.azure.com",
+                      "label":  "Purview",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.purviewstudio.azure.com",
+                      "label":  "Purview Studio",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.digitaltwins.azure.net",
+                      "label":  "Digital Twins",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.api.azureml.ms",
+                      "label":  "ML Workspace",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.notebooks.azure.net",
+                      "label":  "ML Notebooks",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurehdinsight.net",
+                      "label":  "HDInsight",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices.net",
+                      "label":  "IoT Hub",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices-provisioning.net",
+                      "label":  "IoT DPS",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.media.azure.net",
+                      "label":  "Media Services",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azconfig.io",
+                      "label":  "App Configuration",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.signalr.net",
+                      "label":  "SignalR",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.webpubsub.azure.com",
+                      "label":  "Web PubSub",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.workspace.azurehealthcareapis.com",
+                      "label":  "Healthcare APIs",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.backup.windowsazure.com",
+                      "label":  "Backup",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.siterecovery.windowsazure.com",
+                      "label":  "Site Recovery",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurestaticapps.net",
+                      "label":  "Static Web Apps",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurecontainerapps.io",
+                      "label":  "Container Apps",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.services.ai.azure.com",
+                      "label":  "privatelink.services.ai.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.directline.botframework.com",
+                      "label":  "privatelink.directline.botframework.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.token.botframework.com",
+                      "label":  "privatelink.token.botframework.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.analysis.windows.net",
+                      "label":  "privatelink.analysis.windows.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.pbidedicated.windows.net",
+                      "label":  "privatelink.pbidedicated.windows.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.prod.powerquery.microsoft.com",
+                      "label":  "privatelink.prod.powerquery.microsoft.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azuredatabricks.net",
+                      "label":  "privatelink.azuredatabricks.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.fabric.microsoft.com",
+                      "label":  "privatelink.fabric.microsoft.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.batch.azure.com",
+                      "label":  "privatelink.batch.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.wvd.microsoft.com",
+                      "label":  "privatelink.wvd.microsoft.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.analytics.cosmos.azure.com",
+                      "label":  "privatelink.analytics.cosmos.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.postgres.cosmos.azure.com",
+                      "label":  "privatelink.postgres.cosmos.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mongocluster.cosmos.azure.com",
+                      "label":  "privatelink.mongocluster.cosmos.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.redis.azure.net",
+                      "label":  "privatelink.redis.azure.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.his.arc.azure.com",
+                      "label":  "privatelink.his.arc.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.guestconfiguration.azure.com",
+                      "label":  "privatelink.guestconfiguration.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dp.kubernetesconfiguration.azure.com",
+                      "label":  "privatelink.dp.kubernetesconfiguration.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.ts.eventgrid.azure.net",
+                      "label":  "privatelink.ts.eventgrid.azure.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-api.net",
+                      "label":  "privatelink.azure-api.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurehealthcareapis.com",
+                      "label":  "privatelink.azurehealthcareapis.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dicom.azurehealthcareapis.com",
+                      "label":  "privatelink.dicom.azurehealthcareapis.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.api.adu.microsoft.com",
+                      "label":  "privatelink.api.adu.microsoft.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azureiotcentral.com",
+                      "label":  "privatelink.azureiotcentral.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.api.videoindexer.ai",
+                      "label":  "privatelink.api.videoindexer.ai",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.purview-service.microsoft.com",
+                      "label":  "privatelink.purview-service.microsoft.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.prod.migration.windowsazure.com",
+                      "label":  "privatelink.prod.migration.windowsazure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure.com",
+                      "label":  "privatelink.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.grafana.azure.com",
+                      "label":  "privatelink.grafana.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.attest.azure.net",
+                      "label":  "privatelink.attest.azure.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.afs.azure.net",
+                      "label":  "privatelink.afs.azure.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.service.signalr.net",
+                      "label":  "privatelink.service.signalr.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.account.maps.azure.com",
+                      "label":  "privatelink.account.maps.azure.com",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.cognitiveservices.azure.us",
+                      "label":  "privatelink.cognitiveservices.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.api.ml.azure.us",
+                      "label":  "privatelink.api.ml.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.notebooks.usgovcloudapi.net",
+                      "label":  "privatelink.notebooks.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.servicebus.usgovcloudapi.net",
+                      "label":  "privatelink.servicebus.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.sql.azuresynapse.usgovcloudapi.net",
+                      "label":  "privatelink.sql.azuresynapse.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dev.azuresynapse.usgovcloudapi.net",
+                      "label":  "privatelink.dev.azuresynapse.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azuresynapse.usgovcloudapi.net",
+                      "label":  "privatelink.azuresynapse.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.datafactory.azure.us",
+                      "label":  "privatelink.datafactory.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.adf.azure.us",
+                      "label":  "privatelink.adf.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurehdinsight.us",
+                      "label":  "privatelink.azurehdinsight.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.databricks.azure.us",
+                      "label":  "privatelink.databricks.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.batch.usgovcloudapi.net",
+                      "label":  "privatelink.batch.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.wvd.azure.us",
+                      "label":  "privatelink.wvd.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurecr.us",
+                      "label":  "privatelink.azurecr.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.database.usgovcloudapi.net",
+                      "label":  "privatelink.database.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.documents.azure.us",
+                      "label":  "privatelink.documents.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mongo.cosmos.azure.us",
+                      "label":  "privatelink.mongo.cosmos.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.cassandra.cosmos.azure.us",
+                      "label":  "privatelink.cassandra.cosmos.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.gremlin.cosmos.azure.us",
+                      "label":  "privatelink.gremlin.cosmos.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.table.cosmos.azure.us",
+                      "label":  "privatelink.table.cosmos.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.postgres.database.usgovcloudapi.net",
+                      "label":  "privatelink.postgres.database.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mysql.database.usgovcloudapi.net",
+                      "label":  "privatelink.mysql.database.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mariadb.database.usgovcloudapi.net",
+                      "label":  "privatelink.mariadb.database.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.redis.cache.usgovcloudapi.net",
+                      "label":  "privatelink.redis.cache.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.eventgrid.azure.us",
+                      "label":  "privatelink.eventgrid.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.workspace.azurehealthcareapis.us",
+                      "label":  "privatelink.workspace.azurehealthcareapis.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.fhir.azurehealthcareapis.us",
+                      "label":  "privatelink.fhir.azurehealthcareapis.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dicom.azurehealthcareapis.us",
+                      "label":  "privatelink.dicom.azurehealthcareapis.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices.us",
+                      "label":  "privatelink.azure-devices.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.servicebus.windows.us",
+                      "label":  "privatelink.servicebus.windows.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices-provisioning.us",
+                      "label":  "privatelink.azure-devices-provisioning.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-automation.us",
+                      "label":  "privatelink.azure-automation.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.prod.migration.windowsazure.us",
+                      "label":  "privatelink.prod.migration.windowsazure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.siterecovery.windowsazure.us",
+                      "label":  "privatelink.siterecovery.windowsazure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.monitor.azure.us",
+                      "label":  "privatelink.monitor.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.adx.monitor.azure.us",
+                      "label":  "privatelink.adx.monitor.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.oms.opinsights.azure.us",
+                      "label":  "privatelink.oms.opinsights.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.ods.opinsights.azure.us",
+                      "label":  "privatelink.ods.opinsights.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.agentsvc.azure-automation.us",
+                      "label":  "privatelink.agentsvc.azure-automation.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.blob.core.usgovcloudapi.net",
+                      "label":  "privatelink.blob.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.purview.azure.us",
+                      "label":  "privatelink.purview.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.purviewstudio.azure.us",
+                      "label":  "privatelink.purviewstudio.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.vaultcore.usgovcloudapi.net",
+                      "label":  "privatelink.vaultcore.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azconfig.azure.us",
+                      "label":  "privatelink.azconfig.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.table.core.usgovcloudapi.net",
+                      "label":  "privatelink.table.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.queue.core.usgovcloudapi.net",
+                      "label":  "privatelink.queue.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.file.core.usgovcloudapi.net",
+                      "label":  "privatelink.file.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.web.core.usgovcloudapi.net",
+                      "label":  "privatelink.web.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dfs.core.usgovcloudapi.net",
+                      "label":  "privatelink.dfs.core.usgovcloudapi.net",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.search.azure.us",
+                      "label":  "privatelink.search.azure.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurewebsites.us",
+                      "label":  "privatelink.azurewebsites.us",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.api.ml.azure.cn",
+                      "label":  "privatelink.api.ml.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.notebooks.chinacloudapi.cn",
+                      "label":  "privatelink.notebooks.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.datafactory.azure.cn",
+                      "label":  "privatelink.datafactory.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.adf.azure.cn",
+                      "label":  "privatelink.adf.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azurehdinsight.cn",
+                      "label":  "privatelink.azurehdinsight.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.batch.chinacloudapi.cn",
+                      "label":  "privatelink.batch.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.wvd.azure.cn",
+                      "label":  "privatelink.wvd.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.database.chinacloudapi.cn",
+                      "label":  "privatelink.database.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.documents.azure.cn",
+                      "label":  "privatelink.documents.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mongo.cosmos.azure.cn",
+                      "label":  "privatelink.mongo.cosmos.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.cassandra.cosmos.azure.cn",
+                      "label":  "privatelink.cassandra.cosmos.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.gremlin.cosmos.azure.cn",
+                      "label":  "privatelink.gremlin.cosmos.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.table.cosmos.azure.cn",
+                      "label":  "privatelink.table.cosmos.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.postgres.database.chinacloudapi.cn",
+                      "label":  "privatelink.postgres.database.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mysql.database.chinacloudapi.cn",
+                      "label":  "privatelink.mysql.database.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.mariadb.database.chinacloudapi.cn",
+                      "label":  "privatelink.mariadb.database.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.redis.cache.chinacloudapi.cn",
+                      "label":  "privatelink.redis.cache.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.servicebus.chinacloudapi.cn",
+                      "label":  "privatelink.servicebus.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices.cn",
+                      "label":  "privatelink.azure-devices.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-devices-provisioning.cn",
+                      "label":  "privatelink.azure-devices-provisioning.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.azure-automation.cn",
+                      "label":  "privatelink.azure-automation.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.vaultcore.azure.cn",
+                      "label":  "privatelink.vaultcore.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.blob.core.chinacloudapi.cn",
+                      "label":  "privatelink.blob.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.table.core.chinacloudapi.cn",
+                      "label":  "privatelink.table.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.queue.core.chinacloudapi.cn",
+                      "label":  "privatelink.queue.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.file.core.chinacloudapi.cn",
+                      "label":  "privatelink.file.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.web.core.chinacloudapi.cn",
+                      "label":  "privatelink.web.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.dfs.core.chinacloudapi.cn",
+                      "label":  "privatelink.dfs.core.chinacloudapi.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.afs.azure.cn",
+                      "label":  "privatelink.afs.azure.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.chinacloudsites.cn",
+                      "label":  "privatelink.chinacloudsites.cn",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "privatelink.signalr.azure.cn",
+                      "label":  "privatelink.signalr.azure.cn",
+                      "enabled":  false
+                  }
+              ]
+}
