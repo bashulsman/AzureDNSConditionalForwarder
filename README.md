@@ -2,7 +2,7 @@
 
 A standalone PowerShell GUI tool that generates per-DC PowerShell scripts to configure **Azure Private DNS conditional forwarders** on your on-premises Active Directory Domain Controllers.
 
-No internet access required. The generated scripts are fully self-contained and run directly on the target DC.
+The generator runs fully offline. An optional **Update zones from Microsoft** button fetches the latest Private Link DNS zone list directly from Microsoft Learn when internet access is available. The generated scripts are fully self-contained and run directly on the target DC.
 
 ![Screenshot](screenshot.png)
 
@@ -101,6 +101,22 @@ Zones are loaded from `AzureDnsForwarders.zones.json` (included). They are group
 | Select None | Uncheck every zone across all categories |
 | + Add | Add a custom zone name (appended under a *Custom* category) |
 | Load zones from file... | Load a different `*.json` zones file at runtime |
+| ↻ Update zones from Microsoft | Download the latest zone list from Microsoft Learn and merge it into the current list |
+
+#### Updating zones from Microsoft Learn
+
+The **↻ Update zones from Microsoft** button in the top-right of the Private DNS Zones panel fetches the official Azure Private Endpoint DNS zone list directly from Microsoft and merges any newly published zones into `AzureDnsForwarders.zones.json`.
+
+How it works:
+
+1. Downloads the raw documentation from the [MicrosoftDocs GitHub repository](https://raw.githubusercontent.com/MicrosoftDocs/azure-docs/main/articles/private-link/private-endpoint-dns.md)
+2. If GitHub is unreachable, falls back to scraping the rendered [Microsoft Learn page](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
+3. Parses the **Commercial** cloud section and extracts all static `privatelink.*` zone names (region-parameterised zones such as `privatelink.{regionName}.azmk8s.io` are skipped automatically)
+4. **Merges** new zones into the existing list — zones already present are left untouched, including any enabled/disabled state the user has set
+5. New zones are added **unchecked by default** so nothing is forwarded unintentionally
+6. Saves the updated `AzureDnsForwarders.zones.json` and immediately refreshes the zone list in the UI
+
+> **Note:** The update button requires outbound internet access (HTTPS on port 443) to `raw.githubusercontent.com` or `learn.microsoft.com`. The rest of the tool works fully offline.
 
 ### 5 — Output folder
 
@@ -168,9 +184,9 @@ The script will:
 
 ## Notes
 
-- The tool runs **fully offline** — no Azure connectivity required
+- The generator runs **fully offline** — the Update button is the only feature that requires internet access
 - Generated scripts are standalone — no external files needed on the DC
-- The `.ps1` file is saved as **UTF-8 with BOM** so PowerShell 5.1 handles special characters correctly
+- The `.ps1` and `.zones.json` files are saved as **UTF-8 with BOM** so PowerShell 5.1 handles special characters correctly
 - Tested on Windows Server 2019 / 2022 with PowerShell 5.1
 
 ---
